@@ -1,0 +1,71 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# HUGO ACADEMIC SITE — GITHUB PAGES CI/CD
+# ═══════════════════════════════════════════════════════════════════════════════
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.164.0'
+          extended: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Cache dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/go-build
+            ~/go/pkg/mod
+            ~/.cache/hugo
+          key: ${{ runner.os }}-deps-${{ hashFiles('**/go.mod', '**/go.sum') }}
+
+      - name: Install dependencies
+        run: |
+          npm install
+
+      - name: Build site
+        run: |
+          hugo --minify --gc
+
+      - name: Run Pagefind search
+        run: |
+          npx pagefind --site public --output-subdir assets/pagefind
+
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          user_name: 'GitHub Actions'
+          user_email: 'actions@github.com'
+          commit_message: 'deploy: ${{ github.event.head_commit.message }}'

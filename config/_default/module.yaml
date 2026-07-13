@@ -1,0 +1,5 @@
+# Hugo Blox modules
+imports:
+  - path: github.com/HugoBlox/kit/modules/integrations/netlify
+  - path: github.com/HugoBlox/kit/modules/blox
+  - path: github.com/HugoBlox/kit/modules/slides

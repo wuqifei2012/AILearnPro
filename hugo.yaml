@@ -1,0 +1,74 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# HUGO ACADEMIC SITE — CUSTOM CONFIGURATION
+# Based on Hugo Blox (Wowchemy) Academic CV Starter
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ── Basic Site Settings ──────────────────────────────────────────────────────
+title: "AI Research Lab"
+baseURL: "https://wuqifei2012.github.io/ai/"
+
+# ── Language ─────────────────────────────────────────────────────────────────
+defaultContentLanguage: en
+hasCJKLanguage: true
+defaultContentLanguageInSubdir: true
+removePathAccents: true
+
+# ── Theme ────────────────────────────────────────────────────────────────────
+theme: "wowchemy"
+
+# ── Page Options ─────────────────────────────────────────────────────────────
+cascade:
+  - target:
+      path: /slides/**
+      kind: page
+    outputs: [HTML, present]
+
+# ── Advanced ─────────────────────────────────────────────────────────────────
+build:
+  writeStats: true
+enableGitInfo: false
+summaryLength: 30
+pagination:
+  pagerSize: 10
+enableEmoji: true
+enableRobotsTXT: true
+footnotereturnlinkcontents: "<sup>^</sup>"
+ignoreFiles: [".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_cache$", "/slides/"]
+disableAliases: true
+outputSitemap: true
+
+outputs:
+  home: [HTML, RSS]
+  section: [HTML, RSS]
+  taxonomy: [HTML]
+  term: [HTML]
+
+imaging:
+  resampleFilter: lanczos
+  quality: 90
+  anchor: smart
+  hint: picture
+
+timeout: 600000
+
+taxonomies:
+  author: authors
+  tag: tags
+  publication_type: publication_types
+
+markup:
+  _merge: deep
+  highlight:
+    lineNos: false
+
+security:
+  _merge: deep
+
+sitemap:
+  _merge: deep
+
+# ── Permalinks ───────────────────────────────────────────────────────────────
+permalinks:
+  post: "/:year/:month/:day/:slug/"
+  publications: "/:slug/"
+  projects: "/:slug/"

@@ -1,0 +1,14 @@
+# Languages
+#   Create a section for each of your site's languages.
+#   Documentation: https://docs.hugoblox.com/reference/language/
+
+# Default language
+en:
+  locale: en-us
+  contentDir: content/en
+
+# Chinese language (Simplified)
+zh:
+  locale: zh-Hans
+  contentDir: content/zh
+  weight: 2
