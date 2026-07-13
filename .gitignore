@@ -9,8 +9,6 @@ temp/
 # Node modules
 node_modules/
 
-# Go module cache (local)
-go.sum
 
 # IDE
 .vscode/
