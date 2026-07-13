@@ -14,7 +14,7 @@ defaultContentLanguageInSubdir: true
 removePathAccents: true
 
 # ── Theme ────────────────────────────────────────────────────────────────────
-theme: "wowchemy"
+theme: wowchemy
 
 # ── Page Options ─────────────────────────────────────────────────────────────
 cascade:
