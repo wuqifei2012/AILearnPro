@@ -68,6 +68,7 @@ ignoreLogs:
   - 'sections-none-/zh/'
   - 'sections-none-/-/en'
   - 'sections-none-/-/'
+  - 'sections-none-/'
 
 sitemap:
   _merge: deep
