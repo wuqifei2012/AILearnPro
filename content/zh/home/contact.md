@@ -18,21 +18,27 @@ form:
       label: "留言"
       type: "textarea"
   captcha: true
-email: "contact@airesearch.lab"
+email: "contact@airelearnpro.dev"
 contact_links:
   - icon: github
     icon_pack: fab
-    name: "关注GitHub"
+    name: "⭐ 在GitHub上给我们星标"
     link: "https://github.com/wuqifei2012"
   - icon: envelope
     icon_pack: fas
     name: "发送邮件"
-    link: "mailto:contact@airesearch.lab"
+    link: "mailto:contact@airelearnpro.dev"
+  - icon: linkedin
+    icon_pack: fab
+    name: "在LinkedIn上连接"
+    link: "https://linkedin.com/in/wuqifei"
+  - icon: scholar
+    icon_pack: fas
+    name: "Google Scholar"
+    link: "https://scholar.google.com"
 automatic_link: true
 design:
   columns: "1"
-  style: "default"
-  animation: ""
-  significance: "0"
-  spacer: ""
+  style: "light"
+  animation: fade-in
 ---

@@ -1,7 +1,8 @@
 ---
 title: "Self-Supervised Representation Learning for Scientific Document Understanding"
 date: 2024-11-10
-doi: "10.1145/3654791.3654812"
+ids:
+    doi: "10.1145/3654791.3654812"
 publishDate: 2024-11-10
 publication_types: ["conference-paper"]
 publication: "*Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2024)*"

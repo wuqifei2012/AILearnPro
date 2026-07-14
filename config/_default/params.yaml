@@ -6,16 +6,16 @@ hugoblox:
 
   # ── IDENTITY ───────────────────────────────────────────────────────────────
   identity:
-    name: "AI Research Lab"
-    organization: "AI Research Laboratory"
+    name: "AILearnPro"
+    organization: "AILearnPro Research Lab"
     type: organization
-    tagline: "Advancing Artificial Intelligence Through Open Research"
-    description: "An open-source AI research laboratory focused on machine learning, natural language processing, computer vision, and intelligent systems. We publish cutting-edge research and build practical AI tools."
+    tagline: "AI Research, Open Source & Learning"
+    description: "An open-source AI research and learning lab focused on large language models, multimodal AI, retrieval-augmented generation, and production-ready intelligent systems. We publish cutting-edge research, build practical AI tools, and share knowledge with the community."
 
     social:
       twitter: "AIResearchLab"
       github: "wuqifei2012"
-      linkedin: "ai-research-lab"
+      linkedin: "wuqifei"
       scholar: "https://scholar.google.com"
 
   # ── THEME ──────────────────────────────────────────────────────────────────
@@ -60,8 +60,8 @@ hugoblox:
     language_switcher: true
     cta:
       enable: true
-      text: "Get Started"
-      url: "#projects"
+      text: "Explore Research"
+      url: "#publications"
 
   # ── FOOTER ─────────────────────────────────────────────────────────────────
   footer:
@@ -71,7 +71,7 @@ hugoblox:
 
   # ── COPYRIGHT ──────────────────────────────────────────────────────────────
   copyright:
-    notice: "© {year} AI Research Lab. This work is licensed under {license}"
+    notice: "© {year} AILearnPro. This work is licensed under {license}"
     license:
       type: cc
       allow_derivatives: true
@@ -80,7 +80,7 @@ hugoblox:
 
   # ── SEO ────────────────────────────────────────────────────────────────────
   seo:
-    title: "AI Research Lab — Machine Learning & Intelligent Systems"
+    title: "AILearnPro — AI Research, Open Source & Learning"
     location:
       address:
         street: ""
@@ -97,7 +97,7 @@ hugoblox:
         - /
       disallow: []
       note: "Public research content. AI crawlers may index publications, projects, and blog posts."
-      contact: "contact@airesearch.lab"
+      contact: "contact@airelearnpro.dev"
 
   # ── CONTENT ────────────────────────────────────────────────────────────────
   content:
@@ -107,6 +107,8 @@ hugoblox:
       enable: true
     reading_time:
       enable: true
+    backlinks:
+      enabled: false
     citations:
       style: apa
 
@@ -114,11 +116,12 @@ hugoblox:
   search:
     enable: true
     suggestions:
-      - "Machine Learning"
-      - "Natural Language Processing"
+      - "Large Language Models"
+      - "Multimodal AI"
+      - "Retrieval-Augmented Generation"
+      - "Parameter-Efficient Fine-Tuning"
       - "Computer Vision"
-      - "Deep Learning"
-      - "Reinforcement Learning"
+      - "Production AI Systems"
     quick_actions: []
 
   # ── COMMENTS ───────────────────────────────────────────────────────────────
@@ -162,7 +165,7 @@ hugoblox:
   # ── REPOSITORY ─────────────────────────────────────────────────────────────
   repository:
     enable: true
-    url: "https://github.com/wuqifei2012/ai"
+    url: "https://github.com/wuqifei2012/AILearnPro"
     branch: main
     content_dir: content
 

@@ -5,7 +5,7 @@
 
 # ── Basic Site Settings ──────────────────────────────────────────────────────
 title: "AI Research Lab"
-baseURL: "https://wuqifei2012.github.io/ai/"
+baseURL: "https://wuqifei2012.github.io/AILearnPro/"
 
 # ── Language ─────────────────────────────────────────────────────────────────
 defaultContentLanguage: en
@@ -25,7 +25,7 @@ cascade:
 
 # ── Advanced ─────────────────────────────────────────────────────────────────
 build:
-  writeStats: true
+  writeStats: false
 enableGitInfo: false
 summaryLength: 30
 pagination:
@@ -64,8 +64,14 @@ markup:
 security:
   _merge: deep
 
+ignoreLogs:
+  - 'sections-none-/zh/'
+  - 'sections-none-/-/'
+
 sitemap:
   _merge: deep
+
+# ── Hugo Blox Config ─────────────────────────────────────────────────────────
 
 # ── Permalinks ───────────────────────────────────────────────────────────────
 permalinks:

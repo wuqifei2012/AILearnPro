@@ -2,38 +2,43 @@
 # An instantiation of the about widget.
 widget: about
 # Title
-title: "About Us"
-# Section subtitle (will not display a section header/title)
-subtitle: ""
-# Avatar (leave blank if using hero or stack)
+title: "About AILearnPro"
+# Section subtitle
+subtitle: "Advancing AI Through Research, Open Source, and Education"
+# Avatar
 avatar: ""
-# List of interests
+# List of research interests
 interests:
-  - "Large Language Models & Fine-tuning"
-  - "Multimodal Learning & Reasoning"
-  - "Computer Vision & Visual Understanding"
-  - "Reinforcement Learning & Agents"
-  - "Efficient AI & Edge Deployment"
+  - "Large Language Models & Parameter-Efficient Fine-Tuning"
+  - "Multimodal Learning & Vision-Language Reasoning"
+  - "Retrieval-Augmented Generation (RAG)"
+  - "Conversational AI & Dialogue Systems"
+  - "Efficient Deep Learning & Edge Deployment"
+  - "Automated Machine Learning (AutoML)"
 # Organizations Affiliated
 organizations:
-  - name: "AI Research Laboratory"
+  - name: "AILearnPro Research Lab"
     url: ""
-# Biogrphy
+# Biography
 biography: |
-  Our laboratory focuses on advancing artificial intelligence through open research and collaboration. We develop novel algorithms and systems for machine learning, natural language processing, computer vision, and intelligent decision-making.
+  AILearnPro is an open-source AI research and learning lab dedicated to pushing the boundaries of machine learning while making advanced AI accessible to everyone.
   
-  Founded in 2024, our team has published extensively at top-tier conferences including ACL, NeurIPS, ICML, and ICLR. We believe in open science and release our code, datasets, and models to the community.
+  Our research spans large language model fine-tuning (LoRA, QLoRA, AdaLoRA), multimodal reasoning, retrieval-augmented generation, and production-ready AI systems. We believe in open science — every project we ship includes reproducible code, detailed documentation, and practical benchmarks.
+  
+  Since our founding in 2024, we've published research at ACL, NeurIPS, ICML, and ICLR, contributed to 10+ open-source projects with 2,000+ GitHub stars, and mentored emerging researchers in the AI community.
+  
+  We're always looking for collaborators. Reach out if you're working on exciting problems at the intersection of AI and real-world impact.
 # Social icons
 social:
   - icon: envelope
     icon_pack: fas
-    link: "mailto:contact@airesearch.lab"
+    link: "mailto:contact@airelearnpro.dev"
   - icon: github
     icon_pack: fab
     link: "https://github.com/wuqifei2012"
   - icon: linkedin
     icon_pack: fab
-    link: "https://linkedin.com/company/ai-research-lab"
+    link: "https://linkedin.com/in/wuqifei"
   - icon: scholar
     icon_pack: fas
     link: "https://scholar.google.com"
@@ -43,7 +48,7 @@ highlight_author: false
 occupation:
   - "AI Research & Development"
   - "Machine Learning Engineering"
-  - "Open Source AI Tools"
-# Email (if using contact widget)
+  - "Open Source & Education"
+# Email
 email: ""
 ---
